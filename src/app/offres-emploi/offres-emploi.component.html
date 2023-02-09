@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row" >
+
+
+<table class="table table-striped" >
+  <thead>
+    <tr>
+      <th scope="col">Titre</th>
+      <th scope="col">Entreprise</th>
+      <th scope="col">Etat</th>
+      <th scope="col">Postuler</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let o of listeEmploi">
+      <td>{{o.titre}}</td>
+      <td>{{o.entreprise}}</td>
+      <td>{{o.etat}}</td>
+      <td><button [disabled]="o.etat==false">Postuler</button></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>

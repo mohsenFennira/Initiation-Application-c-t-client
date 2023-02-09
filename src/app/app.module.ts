@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AccComponent } from './acc/acc.component';
 import { FormsModule } from '@angular/forms';
+import { OffresEmploiComponent } from './offres-emploi/offres-emploi.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AccComponent
+    AccComponent,
+    OffresEmploiComponent
   ],
   imports: [
     BrowserModule,
@@ -17,6 +19,6 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [OffresEmploiComponent]
 })
 export class AppModule { }

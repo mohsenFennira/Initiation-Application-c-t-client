@@ -11,4 +11,6 @@ export class AccComponent {
 aff(){
   alert("hello");
 }
+time=7;
+products=["p1","p2"];
 }

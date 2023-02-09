@@ -5,3 +5,15 @@
 
 <input type="text" [(ngModel)]="cls">
 class : {{cls}}
+<div *ngIf="time==8  else tt"  >
+     <p>mouh</p>
+</div>
+<ng-template #tt>
+     <p>ilyes</p>
+</ng-template>
+<div *ngFor="let p of products , let i=index,let o=odd,let e=even">
+  <span *ngIf="o">
+     <h1>{{p}}</h1>
+    </span>
+</div>
+
