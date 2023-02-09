@@ -10,6 +10,7 @@
       <th scope="col">Etat</th>
       <th scope="col">Postuler</th>
 
+
     </tr>
   </thead>
   <tbody>
@@ -18,8 +19,12 @@
       <td>{{o.entreprise}}</td>
       <td>{{o.etat}}</td>
       <td><button [disabled]="o.etat==false">Postuler</button></td>
+
     </tr>
   </tbody>
 </table>
+
+<button  (click)="calculer()">Calculer les offres d'emplois disponibles </button>
+<h1>les offres d'emplois disponibles : {{num}}</h1>
 </div>
 </div>

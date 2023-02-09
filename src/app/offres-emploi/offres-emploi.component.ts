@@ -13,4 +13,15 @@ export class OffresEmploiComponent {
     {reference:"2",titre:"Dev_Symfony",entreprise:"EY",etat:false},
     {reference:"3",titre:"Dev_DotNET",entreprise:"MohsenHolding",etat:true}
   ]
+ num = 0;
+  calculer(){
+let i =0;
+    this.listeEmploi.forEach(element => {
+             if(element.etat==true)
+             {
+              i++;
+             }
+    });
+    this.num=i;
+  }
 }
