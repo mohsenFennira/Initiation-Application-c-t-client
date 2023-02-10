@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { AccComponent } from './acc/acc.component';
 import { FormsModule } from '@angular/forms';
 import { OffresEmploiComponent } from './offres-emploi/offres-emploi.component';
+import { ArticlesComponent } from './articles/articles.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AccComponent,
-    OffresEmploiComponent
+    OffresEmploiComponent,
+    ArticlesComponent
   ],
   imports: [
     BrowserModule,
@@ -19,6 +21,6 @@ import { OffresEmploiComponent } from './offres-emploi/offres-emploi.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [OffresEmploiComponent]
+  bootstrap: [ArticlesComponent]
 })
 export class AppModule { }

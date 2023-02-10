@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let a of listeArticles">
+<div class="card" style="width: 18rem;" >
+  <div *ngIf="a.categorue=='Sport'">
+    <div [ngClass]="{'c':true}">
+  <div class="card-body" >
+    <h5 class="card-title">{{a.titre}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">{{a.auteur}}</h6>
+    <p class="card-text">{{a.contenu}}</p>
+    <a href="#" class="card-link">{{a.date}}</a>
+    <a href="#" class="card-link">{{a.categorue}}</a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<input [(ngModel)]="ar">
+</div>
+</div>

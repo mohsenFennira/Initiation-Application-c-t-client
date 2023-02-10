@@ -24,4 +24,5 @@ let i =0;
     });
     this.num=i;
   }
+ 
 }
