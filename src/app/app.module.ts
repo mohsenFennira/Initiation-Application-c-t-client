@@ -7,13 +7,17 @@ import { AccComponent } from './acc/acc.component';
 import { FormsModule } from '@angular/forms';
 import { OffresEmploiComponent } from './offres-emploi/offres-emploi.component';
 import { ArticlesComponent } from './articles/articles.component';
+import { HeaderComponent } from './header/header.component';
+import { TemplateDrivenForComponent } from './template-driven-for/template-driven-for.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AccComponent,
     OffresEmploiComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    HeaderComponent,
+    TemplateDrivenForComponent
   ],
   imports: [
     BrowserModule,
@@ -21,6 +25,6 @@ import { ArticlesComponent } from './articles/articles.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [ArticlesComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

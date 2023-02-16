@@ -1,0 +1,41 @@
+
+<div class="container">
+  <h2>Informations Personnelles</h2>
+  <hr>
+<form #form="ngForm" (ngSubmit)="addForm(form)">
+  <div class="form-group">
+    <label >Nom</label>
+    <input type="text" class="form-control"   placeholder="Enter Nom" ngModel name="nom" #nom="ngModel" required >
+    <span *ngIf="nom.invalid && nom.touched" style="color: red;">Required Input</span>
+  </div>
+  <div class="form-group">
+    <label >Email</label>
+    <input type="email" class="form-control" ngModel name="email" #email="ngModel" required >
+  </div>
+  <hr>
+  <h2>Payment Methode</h2>
+<hr>
+  <div class="form-group">
+    <label >Type de carte</label>
+    <input type="text" class="form-control" ngModel name="typecarte" required #typecarte="ngModel" >
+  </div>
+
+  <div class="form-group">
+    <label >Numero carte</label>
+    <input type="text" class="form-control" ngModel required name="numcarte"  #numcarte="ngModel" minlength="16" maxlength="16">
+    <span *ngIf="numcarte?.errors?.['minlength']">min 16 numbers</span>
+  </div>
+
+  <div class="form-group">
+    <label >Date expiration</label>
+    <input type="text" class="form-control" ngModel name="dateexp" required #dateexp="ngModel" >
+  </div>
+
+  <div class="form-group" *ngIf="form.valid">
+    <label >Code</label>
+    <input type="text" class="form-control" >
+  </div>
+  <br>
+  <button  class="btn btn-primary" [disabled]="form.invalid">Submit</button>
+</form>
+</div>
